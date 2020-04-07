@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-totpplugin" version="0.0.1">
+    <name>TotpPlugin</name>
+
+    <description>An Android Cordova plugin that allows users to generate Time based OTP.</description>
+    <license>MIT</license>
+
+    <keywords>cordova,android,otp,totp</keywords>
+    <repo>https://github.com/ubaidengr/TOTP_Plugin.git</repo>
+    <issue>https://github.com/ubaidengr/TOTP_Plugin/issues</issue>
+  
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+  
+    <js-module src="www/totpplugin.js" name="totpPlugin">
+        <clobbers target="window.plugins.totpPlugin" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="TotpPlugin">
+                <param name="android-package" value="com.ubaid.cordova.plugin.TotpPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/TotpPlugin.java" target-dir="src/com/ubaid/cordova/plugin" />
+    </platform>
+</plugin>

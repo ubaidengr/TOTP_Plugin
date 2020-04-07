@@ -1,0 +1,33 @@
+{
+  "name": "cordova-plugin-totpplugin",
+  "version": "0.0.1",
+  "description": "An Android Cordova plugin that allows users to generate Time based OTP.",
+  "cordova": {
+    "id": "cordova-plugin-totpplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ubaidengr/TOTP_Plugin.git"
+  },
+  "keywords": [
+    "OTP",
+	"TOTP",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Muhammad Ubaid <ubaid.engr@yahoo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ubaidengr/TOTP_Plugin/issues"
+  },
+  "homepage": "https://github.com/ubaidengr/TOTP_Plugin/"
+}
