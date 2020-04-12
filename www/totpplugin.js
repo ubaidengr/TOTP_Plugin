@@ -3,10 +3,9 @@ function TotpPlugin() {}
 
 // The function that passes work along to native shells
 // Message is a string, duration may be 'long' or 'short'
-TotpPlugin.prototype.generate = function(message, duration, successCallback, errorCallback) {
+TotpPlugin.prototype.generate = function(uri, successCallback, errorCallback) {
   var options = {};
-  options.message = message;
-  options.duration = duration;
+  options.uri = uri;
   cordova.exec(successCallback, errorCallback, 'TotpPlugin', 'generate', [options]);
 }
 
