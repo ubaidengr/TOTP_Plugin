@@ -26,5 +26,10 @@
         </config-file>
 
         <source-file src="src/android/TotpPlugin.java" target-dir="src/com/ubaid/cordova/plugin" />
+		<source-file src="src/android/Token.java" target-dir="src/com/ubaid/cordova/plugin" />
+		<source-file src="src/android/TokenCode.java" target-dir="src/com/ubaid/cordova/plugin" />
+		<source-file src="src/android/Base32String.java" target-dir="src/com/ubaid/cordova/plugin" />
+		
+		
     </platform>
 </plugin>
