@@ -46,6 +46,10 @@
 		<source-file src="src/ios/TotpPlugin.swift" />
 		<source-file src="src/ios/Token.swift" />
 		<source-file src="src/ios/OTP.swift" />
+		 <source-file src="src/ios/Base16.swift" />
+		 <source-file src="src/ios/Base32.swift" />
+		 <source-file src="src/ios/shim.swift" />
+		 <source-file src="src/ios/StringExtension.swift" />
 		
 		<dependency id="cordova-plugin-add-swift-support" version="1.7.2"/>
     </platform>
