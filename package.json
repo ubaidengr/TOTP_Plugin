@@ -1,11 +1,12 @@
 {
   "name": "cordova-plugin-totpplugin",
   "version": "0.0.1",
-  "description": "An Android Cordova plugin that allows users to generate Time based OTP.",
+  "description": "A Cordova plugin that allows users to generate Time based OTP.",
   "cordova": {
     "id": "cordova-plugin-totpplugin",
     "platforms": [
-      "android"
+      "android",
+		"ios"
     ]
   },
   "repository": {
