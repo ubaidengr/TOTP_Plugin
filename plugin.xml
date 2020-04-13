@@ -4,7 +4,7 @@
         id="cordova-plugin-totpplugin" version="0.0.1">
     <name>TotpPlugin</name>
 
-    <description>An Android Cordova plugin that allows users to generate Time based OTP.</description>
+    <description>A Cordova plugin that allows users to generate Time based OTP.</description>
     <license>MIT</license>
 
     <keywords>cordova,android,otp,totp</keywords>
@@ -22,6 +22,7 @@
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="TotpPlugin">
                 <param name="android-package" value="com.ubaid.cordova.plugin.TotpPlugin"/>
+				<param name="ios-package" value="com.ubaid.cordova.plugin.TotpPlugin"/>
             </feature>
         </config-file>
 
@@ -30,6 +31,22 @@
 		<source-file src="src/android/TokenCode.java" target-dir="src/com/ubaid/cordova/plugin" />
 		<source-file src="src/android/Base32String.java" target-dir="src/com/ubaid/cordova/plugin" />
 		
+		<source-file src="src/ios/Token.swift" target-dir="src/com/ubaid/cordova/plugin" />
 		
+		
+    </platform>
+	
+	 <platform name="ios">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="TotpPlugin">
+				<param name="ios-package" value="TotpPlugin"/>
+            </feature>
+        </config-file>
+
+		<source-file src="src/ios/TotpPlugin.swift" />
+		<source-file src="src/ios/Token.swift" />
+		<source-file src="src/ios/OTP.swift" />
+		
+		<dependency id="cordova-plugin-add-swift-support" version="1.7.2"/>
     </platform>
 </plugin>
