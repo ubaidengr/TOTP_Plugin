@@ -1,6 +1,6 @@
 import Foundation
 
-#if !compiler(>=5)
+//#if !compiler(>=5)
 extension Data {
     func withUnsafeBytes<Result>(_ apply: (UnsafeRawBufferPointer) throws -> Result) rethrows -> Result {
         return try withUnsafeBytes {
@@ -8,4 +8,4 @@ extension Data {
         }
     }
 }
-#endif
+//#endif
