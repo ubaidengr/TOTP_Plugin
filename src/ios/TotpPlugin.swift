@@ -1,5 +1,5 @@
 @objc(TotpPlugin) class TotpPlugin : CDVPlugin {
-  func generate(command: CDVInvokedUrlCommand) {
+  func generate(_ command: CDVInvokedUrlCommand) {
     var pluginResult = CDVPluginResult(
       status: CDVCommandStatus_ERROR
     )
