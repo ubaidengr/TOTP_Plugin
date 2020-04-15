@@ -31,8 +31,6 @@
 		<source-file src="src/android/TokenCode.java" target-dir="src/com/ubaid/cordova/plugin" />
 		<source-file src="src/android/Base32String.java" target-dir="src/com/ubaid/cordova/plugin" />
 		
-		<source-file src="src/ios/Token.swift" target-dir="src/com/ubaid/cordova/plugin" />
-		
 		
     </platform>
 	
@@ -46,6 +44,7 @@
 		<source-file src="src/ios/TotpPlugin.swift" />
 		<source-file src="src/ios/Token.swift" />
 		<source-file src="src/ios/OTP.swift" />
+		 <source-file src="src/ios/TokenStore.swift" />
 		 <source-file src="src/ios/Base16.swift" />
 		 <source-file src="src/ios/Base32.swift" />
 		 <source-file src="src/ios/shim.swift" />

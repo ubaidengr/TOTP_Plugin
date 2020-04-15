@@ -14,10 +14,8 @@
         var code = ""
         
         if let urlc = URLComponents(string: uri) {
-            if let otp = OTP(urlc: urlc) {
-                if let token = Token(otp: otp, urlc: urlc, load: false) {
-                    code = token.codes[0].value
-                }
+            if let token = TokenStore().add(urlc) {
+                code = token.codes[0].value
             }
         }
         
