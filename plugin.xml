@@ -37,7 +37,7 @@
     </platform>
 	
 	 <platform name="ios">
-        <config-file target="res/xml/config.xml" parent="/*">
+        <config-file target="config.xml" parent="/*">
             <feature name="TotpPlugin">
 				<param name="ios-package" value="TotpPlugin"/>
             </feature>
