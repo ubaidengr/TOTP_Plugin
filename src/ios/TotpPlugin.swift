@@ -4,7 +4,10 @@
       status: CDVCommandStatus_ERROR
     )
 
-    let uri = command.arguments[0] as? String ?? ""
+    var uri = ""
+    if let url = command.arguments[0] as? [String: String] {
+        uri = url["uri"]!
+    }
     
     if uri.count > 0 {
         
