@@ -50,9 +50,7 @@
 		 <source-file src="src/ios/shim.swift" />
 		 <source-file src="src/ios/StringExtension.swift" />
 		 <source-file src="src/ios/KeychainStore.swift" />
-         
          <header-file src="src/ios/Plugin-Bridging-Header.h" type="BridgingHeader" />
-         <source-file src="CommonCrypto/CommonHMAC.h" />
 		
 		<dependency id="cordova-plugin-add-swift-support" version="1.7.2"/>
 		 
