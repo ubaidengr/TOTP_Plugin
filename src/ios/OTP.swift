@@ -19,7 +19,7 @@
 //
 
 import Foundation
-import CommonCrypto
+//import CommonCrypto
 
 public final class OTP : NSObject, KeychainStorable {
     public static let store = KeychainStore<OTP>()
