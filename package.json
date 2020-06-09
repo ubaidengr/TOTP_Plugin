@@ -19,12 +19,7 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.0.0"
-    }
-  ],
+  
   "author": "Muhammad Ubaid <ubaid.engr@yahoo.com>",
   "license": "MIT",
   "bugs": {
