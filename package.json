@@ -22,7 +22,7 @@
   "engines": [
     {
       "name": "cordova",
-      "version": ">=5.1.1"
+      "version": ">=3.0.0"
     }
   ],
   
